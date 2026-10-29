@@ -315,11 +315,11 @@ function App() {
               <span className="ponto" />
               RADSABER · CONSULTA EM RADIOLOGIA
             </span>
-            <h1>{pagina === 'sobre' ? 'Sobre o RadSaber' : pagina === 'fontes' ? 'Fontes e referências' : 'Aprenda radiologia'}</h1>
+            <h1>{pagina === 'sobre' ? 'Sobre o RadSaber' : pagina === 'bibliografia' ? 'Bibliografia e referências' : 'Aprenda radiologia'}</h1>
             <p className="descricao">
               {pagina === 'sobre'
                 ? 'Uma plataforma em desenvolvimento para facilitar o acesso a informações práticas da rotina radiológica.'
-                : pagina === 'fontes'
+                : pagina === 'bibliografia'
                   ? 'Um espaço planejado para reunir referências técnicas, bibliográficas e links relacionados aos conteúdos.'
                   : 'Um espaço planejado para estudar modalidades, técnicas e conceitos importantes da radiologia.'}
             </p>
@@ -341,7 +341,7 @@ function App() {
                 </>
               )}
 
-              {pagina === 'fontes' && (
+              {pagina === 'bibliografia' && (
                 <>
                   <h2>Referências por conteúdo</h2>
                   <p>
